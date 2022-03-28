@@ -8,5 +8,5 @@ This repository contains solutions to [Project Euler](https://projecteuler.net) 
 
 ID | Description / Title | Solution | External Link
 --- | --- | --- | ---
-1 | Multiples of 3 or 5 | [![Solution Icon](https://cdn-icons-png.flaticon.com/512/190/190708.png)](1_Multiples_of_3_or_5) | [![Link Icon](https://www.iconsdb.com/icons/preview/purple/link-xxl.png)](https://projecteuler.net/problem=1)
-2 | Even Fibonacci numbers | [![Solution Icon](https://cdn-icons-png.flaticon.com/512/190/190708.png)](2_Even_Fibonacci_numbers) | [![Link Icon](https://www.iconsdb.com/icons/preview/purple/link-xxl.png)](https://projecteuler.net/problem=2)
+1 | Multiples of 3 or 5 | [<img alt="Solution Icon" src="https://cdn-icons-png.flaticon.com/512/190/190708.png" width="10"/>](1_Multiples_of_3_or_5) | [<img alt="Link Icon" src="https://www.iconsdb.com/icons/preview/purple/link-xxl.png" width="10"/>](https://projecteuler.net/problem=1)
+2 | Even Fibonacci numbers | [<img alt="Solution Icon" src="https://cdn-icons-png.flaticon.com/512/190/190708.png" width="10"/>](2_Even_Fibonacci_numbers) | [<img alt="Link Icon" src="https://www.iconsdb.com/icons/preview/purple/link-xxl.png" width="10"/>](https://projecteuler.net/problem=2)
