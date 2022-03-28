@@ -6,7 +6,7 @@
 
 This repository contains solutions to [Project Euler](https://projecteuler.net) problems.
 
-ID | Description / Title
+ID | Description / Title | Solution | External Link
 --- | ---
-2 | [Even Fibonacci numbers](https://projecteuler.net/problem=2)
-1 | [Multiples of 3 or 5](https://projecteuler.net/problem=1)
+1 | Multiples of 3 or 5 | [![Solution Icon](https://cdn-icons-png.flaticon.com/512/190/190708.png)](1_Multiples_of_3_or_5) | [![Link Icon](https://www.iconsdb.com/icons/preview/purple/link-xxl.png)](https://projecteuler.net/problem=1)
+2 | Even Fibonacci numbers | [![Solution Icon](https://cdn-icons-png.flaticon.com/512/190/190708.png)](2_Even_Fibonacci_numbers) | [![Link Icon](https://www.iconsdb.com/icons/preview/purple/link-xxl.png)](https://projecteuler.net/problem=2)
