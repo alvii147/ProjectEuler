@@ -10,8 +10,8 @@ LINK_ICON_URL = 'https://www.iconsdb.com/icons/preview/purple/link-xxl.png'
 if __name__ == '__main__':
     with open('../README.md', 'w') as readme_file:
         readme_file.write('# Project Euler Problems & Solutions\n\n')
-        readme_file.write(f'<img alt="Project Euler Logo" src="{LOGO_URL}" width="400"/>\n\n')
-        readme_file.write(f'<img alt="Project Euler Logo" src="{EULER_PORTRAIT_URL}" width="500"/>\n\n')
+        readme_file.write(f'<img alt="Project Euler Logo" src="{LOGO_URL}"/>\n\n')
+        readme_file.write(f'<img alt="Project Euler Logo" src="{EULER_PORTRAIT_URL}" width="250"/>\n\n')
         readme_file.write(f'This repository contains solutions to [Project Euler]({PROJECT_EULER_URL}) problems.\n\n')
         readme_file.write('ID | Description / Title | Solution | External Link\n')
         readme_file.write('--- | --- | --- | ---\n')
@@ -22,7 +22,7 @@ if __name__ == '__main__':
                 problem_id, problem_title = match.groups()
                 problem_title = problem_title.replace('_', ' ')
                 problem_url = PROJECT_EULER_URL + f'/problem={problem_id}'
-                solution_img = f'<img alt="Solution Icon" src="{SOLUTION_ICON_URL}" width="10"/>'
-                link_img = f'<img alt="Link Icon" src="{LINK_ICON_URL}" width="10"/>'
+                solution_img = f'<img alt="Solution Icon" src="{SOLUTION_ICON_URL}" width="20"/>'
+                link_img = f'<img alt="Link Icon" src="{LINK_ICON_URL}" width="20"/>'
 
                 readme_file.write(f'{problem_id} | {problem_title} | [{solution_img}]({dirname}) | [{link_img}]({problem_url})\n')
