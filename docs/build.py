@@ -22,5 +22,7 @@ if __name__ == '__main__':
                 problem_id, problem_title = match.groups()
                 problem_title = problem_title.replace('_', ' ')
                 problem_url = PROJECT_EULER_URL + f'/problem={problem_id}'
+                solution_img = f'<img alt="Solution Icon" src="{SOLUTION_ICON_URL}" width="10"/>'
+                link_img = f'<img alt="Link Icon" src="{LINK_ICON_URL}" width="10"/>'
 
-                readme_file.write(f'{problem_id} | {problem_title} | [![Solution Icon]({SOLUTION_ICON_URL})]({dirname}) | [![Link Icon]({LINK_ICON_URL})]({problem_url})\n')
+                readme_file.write(f'{problem_id} | {problem_title} | [{solution_img}]({dirname}) | [{link_img}]({problem_url})\n')
