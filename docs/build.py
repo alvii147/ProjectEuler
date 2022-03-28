@@ -14,7 +14,7 @@ if __name__ == '__main__':
         readme_file.write(f'<img alt="Project Euler Logo" src="{EULER_PORTRAIT_URL}" width="500"/>\n\n')
         readme_file.write(f'This repository contains solutions to [Project Euler]({PROJECT_EULER_URL}) problems.\n\n')
         readme_file.write('ID | Description / Title | Solution | External Link\n')
-        readme_file.write('--- | ---\n')
+        readme_file.write('--- | --- | --- | ---\n')
 
         for dirname in sorted(os.listdir('../')):
             match = re.search('(\d+)_(\S+)', dirname)
