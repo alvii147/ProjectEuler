@@ -25,4 +25,4 @@ if __name__ == '__main__':
                 solution_img = f'<img alt="Solution Icon" src="{SOLUTION_ICON_URL}" width="20"/>'
                 link_img = f'<img alt="Link Icon" src="{LINK_ICON_URL}" width="20"/>'
 
-                readme_file.write(f'{problem_id} | {problem_title} | [{solution_img}]({dirname}) | [{link_img}]({problem_url})\n')
+                readme_file.write(f'{problem_id} | {problem_title} | [{solution_img}](solutions/{dirname}) | [{link_img}]({problem_url})\n')
