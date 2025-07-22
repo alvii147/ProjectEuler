@@ -16,8 +16,8 @@ if __name__ == '__main__':
         readme_file.write('ID | Description / Title | Solution | External Link\n')
         readme_file.write('--- | --- | --- | ---\n')
 
-        for dirname in sorted(os.listdir('../solutions/')):
-            match = re.search('(\d+)_(\S+)', dirname)
+        for dirname in sorted(os.listdir('../solutions/'), key=lambda x: int(x.split('_')[0])):
+            match = re.search(r'(\d+)_(\S+)', dirname)
             if match:
                 problem_id, problem_title = match.groups()
                 problem_title = problem_title.replace('_', ' ')
