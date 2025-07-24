@@ -101,16 +101,19 @@ nums = """
 53503534226472524250874054075591789781264330331690
 """
 
-if __name__ == '__main__':
-    nums_split = nums.strip().split()
-    n_rows = len(nums_split)
-    n_cols = len(nums_split[0])
+
+def add_number_strs(nums: list[str]) -> list[int]:
+    """
+    Add list of string numbers and return the digits.
+    """
+    n_rows = len(nums)
+    n_cols = len(nums[0])
 
     reversed_digits = []
     carry = 0
     for c in range(n_cols - 1, -1, -1):
         for r in range(n_rows):
-            carry += int(nums_split[r][c])
+            carry += int(nums[r][c])
 
         reversed_digits.append(carry % 10)
         carry //= 10
@@ -119,4 +122,8 @@ if __name__ == '__main__':
         reversed_digits.append(carry % 10)
         carry //= 10
 
-    print('Answer:', ''.join(str(i) for i in reversed(reversed_digits[-10:])))
+    return list(reversed(reversed_digits))
+
+
+if __name__ == '__main__':
+    print('Answer:', ''.join(str(i) for i in add_number_strs(nums.strip().split())[:10]))

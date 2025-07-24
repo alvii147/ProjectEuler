@@ -7,6 +7,7 @@ def factorial(n: int) -> int:
 
     return n * factorial(n - 1)
 
+
 def factorial_over_factorial(n: int, m: int) -> int:
     """
     Calculate n! / m!, which is equivalent to
@@ -17,6 +18,7 @@ def factorial_over_factorial(n: int, m: int) -> int:
         value *= i
 
     return value
+
 
 def lattice_paths(n: int) -> int:
     """
@@ -38,6 +40,7 @@ def lattice_paths(n: int) -> int:
     paths of (2n)! / (n! * n!).
     """
     return factorial_over_factorial(2 * n, n) // factorial(n)
+
 
 if __name__ == '__main__':
     print('Answer:', lattice_paths(20))
